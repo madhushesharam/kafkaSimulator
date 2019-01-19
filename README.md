@@ -16,6 +16,19 @@ TODO:
  
 
  Execution
- 	1) docker-compose -f docker-compose.yml up   <Once Docker instances are running ...>
- 	2) python app.py
+ 1) docker-compose -f docker-compose.yml up 
+ 2) python app.py
+ 
+ Example
+ curl -X POST \
+  http://localhost:5000/posttoKafka \
+  -d ' {
+        "xx44Checkkey1": "val1",
+        "xx2llCheckkey2": "val2",
+        "xx3llCheckkey3": "val3"
+ }'
 
+
+
+
+curl -X GET http://127.0.0.1:5000/getLatestKafka 
