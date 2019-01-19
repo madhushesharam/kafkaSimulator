@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # Reference : https://pypi.org/project/kafka-python/
 
 import logging, time,json
