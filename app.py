@@ -21,19 +21,6 @@ def readfromkafka():
     print "Here in Get call reading myvalue : \t" + myvalue + "\n"
     print type (myvalue)
     print myvalue
-    '''
-    s = json.dumps(myvalue, indent=4, sort_keys=True)
-    print(s)    
-    print type (s)
-    d = json.loads(s) 
-    print " CHECK HERE.....=>>>> "
-    print type (d)
-    d = {
-        "timeStamp" : datetime.datetime.now(),
-        "readlatestMessage ": d
-    }
-    '''
-    
     myvalue = json.loads(myvalue)
     return jsonify(myvalue)
 
