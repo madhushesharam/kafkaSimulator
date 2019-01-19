@@ -16,6 +16,6 @@ TODO:
  
 
  Execution
- 	1) chmod u+x docker-compose.yml;docker-compose -f docker-compose.yml up   <Once Docker instances are running ...>
- 	2) chmod u+x pythonKafkaexample.py ;./pythonKafkaexample.py
+ 	1) docker-compose -f docker-compose.yml up   <Once Docker instances are running ...>
+ 	2) python app.py
 
