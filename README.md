@@ -9,12 +9,13 @@ TODO:
    3) requirements.txt / make File etc 
    
    
- Execution  
+ Prerequisites  
    1) Docker /Docker Compose is available
    2) Python 2.7> with kafka-python dependency installed.
    
  
- 
- a) chmod u+x docker-compose.yml;docker-compose -f docker-compose.yml up   <Once Docker instances are running ...>
- b) chmod u+x pythonKafkaexample.py ;./pythonKafkaexample.py
+
+ Execution
+ 	1) chmod u+x docker-compose.yml;docker-compose -f docker-compose.yml up   <Once Docker instances are running ...>
+ 	2) chmod u+x pythonKafkaexample.py ;./pythonKafkaexample.py
 
