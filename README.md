@@ -4,9 +4,8 @@ Simple example with python Producer Consumer, with Docker Kafka and Zookeper
 
 
 TODO:
-   1) Add JSON Serialize/De-Serialize
-   2) Flask 
-   3) requirements.txt / make File etc 
+   1) Parametrize the PORT,HOST etc 
+   2) simplify installation requirements.txt / make File 
    
    
  Prerequisites  
