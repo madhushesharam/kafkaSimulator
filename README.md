@@ -28,17 +28,23 @@ Give examples
 
 ### Usage
 
-
- Auth
- Retreive Token 
+Auth Retreive Token
+```
  curl -X POST http://127.0.0.1:5000/auth -d ' {"username" : "user1","password" : "abcxyz"}'
-
-
+```
+ 
+Post Messages 
+```
  curl -X POST  http://127.0.0.1:5000/messages -H 'authorization: JWT $TOKEN  -d '{"key1": "val1","Key2": "val2"}'
+```
 
-** GET CALL ** To Read latest single event from Kafka 
-
+Read latest single event from Kafka 
+```
 curl -X GET http://localhost:5000/messages -H 'authorization: JWT $TOKEN 
+```
+
+
+
   
 
 ### Installing
@@ -63,21 +69,8 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
 
-Explain what these tests test and why
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -85,9 +78,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [kafka-python](https://kafka-python.readthedocs.io ) - Python lib  
+* [Flask-Restful](https://flask-restful.readthedocs.io/) - The web framework used
+* [Docker](https://github.com/simplesteph/kafka-stack-docker-compose) 
 
 
 ## Versioning
@@ -96,8 +89,6 @@ Add additional notes about how to deploy this on a live system
 
 * **Madhu Shesharam** - *Initial work* 
 
-
-ils
 
 ## Reference
 
