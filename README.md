@@ -31,3 +31,9 @@ TODO:
 
 curl -X GET http://localhost:5000/messages -H 'authorization: JWT $TOKEN 
   
+
+References :
+## https://kafka-python.readthedocs.io 
+## https://flask-restful.readthedocs.io
+## https://pythonhosted.org/Flask-JWT/
+## https://github.com/simplesteph/kafka-stack-docker-compose
