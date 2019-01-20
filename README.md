@@ -1,6 +1,6 @@
 # Simulate Events 
 
-Simple Secured Restful Service [Written in FlaskRestful,kafka-python,flask_jwt]
+Simple Secured Restful Service [Written in *FlaskRestful* ,*kafka-python*, *flask_jwt*]
 Writes/Reads JSON messages to/from  Kafka Broker Hosted on local Docker Containers (kafka broker with ZooKeeper) 
 This would be helpful , for Dev & Test projects.
 
