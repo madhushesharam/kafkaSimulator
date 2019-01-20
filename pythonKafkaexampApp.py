@@ -11,10 +11,9 @@ class Producer():
         
     
     def run(self):
-        
         producer = KafkaProducer(bootstrap_servers='localhost:9092')
         message = json.dumps(self.message) 
-        producer.send(b'my-topic', message)
+        producer.send(b'my-topic', message).get(timeout=10)
         time.sleep(1)
         producer.close()
 
@@ -37,3 +36,15 @@ class Consumer():
         return val  # returns last read message...
 
         
+'''
+settings = {
+    'bootstrap.servers': 'localhost:9092',
+    'group.id': 'mygroup',
+    'client.id': 'client-1',
+    'enable.auto.commit': True,
+    'session.timeout.ms': 6000,
+    'default.topic.config': {'auto.offset.reset': 'earliest'}
+}
+
+c = Consumer(settings)
+'''
