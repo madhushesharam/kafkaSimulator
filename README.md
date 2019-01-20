@@ -1,14 +1,13 @@
 Simple Secured Restful Service [Written in FlaskRestful,kafka-python,flask_jwt]
 Writes/Reads JSON messages to/from  Kafka Broker Hosted on local Docker Containers (kafka broker with ZooKeeper) 
 
-# Refer : https://pypi.org/project/kafka-python/
-
 
 TODO:
    1) Parametrize the PORT,HOST / create CONFIG utils 
    2) simplify installation requirements.txt / make File
    3) Refactor & Additional Error Handling 
-   4) Add Tests
+   4) Add Logging and Tests
+   
    
    
  Prerequisites  
@@ -36,7 +35,7 @@ curl -X GET http://localhost:5000/messages -H 'authorization: JWT $TOKEN
   
 
 References :
-## https://kafka-python.readthedocs.io 
-## https://flask-restful.readthedocs.io
-## https://pythonhosted.org/Flask-JWT/
-## https://github.com/simplesteph/kafka-stack-docker-compose
+  https://kafka-python.readthedocs.io 
+  https://flask-restful.readthedocs.io
+  https://pythonhosted.org/Flask-JWT/
+  https://github.com/simplesteph/kafka-stack-docker-compose
