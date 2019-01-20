@@ -39,6 +39,14 @@ Read latest single event from Kafka
 curl -X GET http://localhost:5000/messages -H 'authorization: JWT $TOKEN 
 ```
 
+### TODO:
+   1) Parametrize the PORT,HOST etc 
+   2) simplify installation requirements.txt / make File 
+   1) Parametrize the PORT,HOST / create CONFIG utils 
+   2) simplify installation requirements.txt / make File
+   3) Refactor & Additional Error Handling 
+   4) Add Tests & CICD
+
 ## Built With
 
 * [kafka-python](https://kafka-python.readthedocs.io ) - Python lib  
