@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "KafkaFlask",
+		"_postman_id": "16fda1d4-5b9c-2b0b-3059-0ee76e6462b6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/auth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"",
+							"var jsonData = JSON.parse(responseBody);",
+							"var value = \"JWT \" + jsonData.access_token ",
+							"",
+							"postman.setGlobalVariable(\"token\", value);",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://127.0.0.1:5000/auth",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n \t\n \t\"username\" : \"user1\",\n \t\"password\" : \"abcxyz\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/messages",
+			"request": {
+				"url": "http://127.0.0.1:5000/messages",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/messages ",
+			"request": {
+				"url": "http://127.0.0.1:5000/messages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Zxx44Checkkey1\": \"val1\",\r\n    \"xaaa3llCheckkey3\": \"val3\",\r\n    \"xallCheckkey2\": \"val2\",\r\n    \"xx2llCheckkey2\": \"val2\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

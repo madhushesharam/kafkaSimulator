@@ -19,14 +19,21 @@ TODO:
  2) python app.py
  
  Example Usage:
- ** POST CALL ** to post ANY JSON messages to KAFKA Producer
- curl -X POST http://localhost:5000/posttoKafka -d ' {
-        "xx44Checkkey1": "val1",
-        "xx2llCheckkey2": "val2",
-        "xx3llCheckkey3": "val3"
- }'
+ 
+ Auth
+ Retreive Token 
+ curl -X POST http://127.0.0.1:5000/auth -d ' {"username" : "user1","password" : "abcxyz"}'
+
+
+ curl -X POST  http://127.0.0.1:5000/messages -H 'authorization: JWT $TOKEN  -d '{"key1": "val1","Key2": "val2"}'
 
 ** GET CALL ** To Read latest single event from Kafka 
 
+curl -X GET http://localhost:5000/messages -H 'authorization: JWT $TOKEN 
+  
 
-curl -X GET http://127.0.0.1:5000/getLatestKafka 
+References :
+## https://kafka-python.readthedocs.io 
+## https://flask-restful.readthedocs.io
+## https://pythonhosted.org/Flask-JWT/
+## https://github.com/simplesteph/kafka-stack-docker-compose
