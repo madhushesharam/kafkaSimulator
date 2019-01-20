@@ -46,6 +46,7 @@ curl -X GET http://localhost:5000/messages -H 'authorization: JWT $TOKEN
    2) simplify installation requirements.txt / make File
    3) Refactor & Additional Error Handling 
    4) Add Tests & CICD
+   5) Port AUTH to noSQL DB 
 
 ## Built With
 
