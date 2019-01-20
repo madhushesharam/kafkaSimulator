@@ -24,4 +24,7 @@ def identity(payload):
     user_id = payload['identity']
     return userid_table.get(user_id, None)
 
+def secrettoken():
+    return "testuser"    
+
 

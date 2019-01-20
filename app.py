@@ -4,11 +4,11 @@ from flask_restful import Resource,Api
 from flask_jwt import JWT, jwt_required, current_identity
 
 from pythonKafkaexampApp import Producer,Consumer
-from auth import authenticate, identity
+from auth import authenticate, identity,secrettoken
 
 
 app = Flask(__name__)
-app.secret_key = 'test'
+app.secret_key = secrettoken()
 # Authentication , JWT will pass the params  username & Password to the function authenticate(username,password)
 # This will create /auth
 jwt = JWT(app, authenticate, identity)
