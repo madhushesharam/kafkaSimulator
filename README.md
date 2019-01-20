@@ -1,11 +1,14 @@
-Simple example with python Producer Consumer, with Docker Kafka and Zookeper
+Simple Secured Restful Service [Written in FlaskRestful,kafka-python,flask_jwt]
+Writes/Reads JSON messages to/from  Kafka Broker Hosted on local Docker Containers (kafka broker with ZooKeeper) 
 
 # Refer : https://pypi.org/project/kafka-python/
 
 
 TODO:
-   1) Parametrize the PORT,HOST etc 
-   2) simplify installation requirements.txt / make File 
+   1) Parametrize the PORT,HOST / create CONFIG utils 
+   2) simplify installation requirements.txt / make File
+   3) Refactor & Additional Error Handling 
+   4) Add Tests
    
    
  Prerequisites  
