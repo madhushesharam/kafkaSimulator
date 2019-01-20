@@ -8,23 +8,19 @@ This would be helpful , for Dev & Test projects.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+```
 git clone git@github.com:madhushesharam/messageSimulator-kafka.git
-cd messageSimulator-kafka      
-
- Execution
- 1) docker-compose -f docker-compose.yml up 
- 2) python app.py
- 
+cd messageSimulator-kafka  
+docker-compose -f docker-compose.yml up 
+python app.py
+```
 
 ### Prerequisites
-
   
    1) Docker /Docker Compose is available
    2) Python 2.7> with kafka-python dependency installed.
  
-```
-Give examples
-```
+
 
 ### Usage
 
