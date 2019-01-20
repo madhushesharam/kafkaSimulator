@@ -3,7 +3,7 @@ from flask import Flask,request
 from flask_restful import Resource,Api
 from flask_jwt import JWT, jwt_required, current_identity
 
-from pythonKafkaexampApp import Producer,Consumer
+from kafkautils import Producer,Consumer
 from auth import authenticate, identity,secrettoken
 
 
